@@ -8,7 +8,7 @@ import { Loading } from '../components/Loading'
 export default function Home() {
   let API = 'https://api.github.com/users/radenadri'
 
-  const userRef = useRef(null)
+  const userRef = useRef<any>(null)
   const [userName, setUserName] = useState('')
   const [data, setData] = useState('')
   const [isLoading, setLoading] = useState(false)
